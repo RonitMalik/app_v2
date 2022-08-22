@@ -99,7 +99,7 @@ def main():
             date_exist = st.checkbox('Only check this box if you have a date dimension in the dataset')
             if date_exist:
                 df.columns = df.columns.str.lower() #making all column header lower case
-                df['date'] = pd.to_datetime(df['date'])
+                df['year'] = pd.to_datetime(df['year'])
                 st.dataframe(df.head(1))
 
             # We can pick up the processed data with converted date columns and generate report
