@@ -38,7 +38,7 @@ st.cache(allow_output_mutation=True)
 def main():
     #Headers
     with st.container():
-        st.title('Descriptive Analytics Tool')
+        st.title('Exploratory Data Analysis Tool')
 
     #Description of the tool
     with st.container():
